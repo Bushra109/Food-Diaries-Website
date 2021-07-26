@@ -100,6 +100,12 @@ Post.findOne({_id: requestedPostId}, function(err, post){
 
 
 
-app.listen(3000, function() {
-  console.log("Server started on port 3000");
+let port = process.env.PORT;
+if (port == NULL || port == "") {
+  port = 3000;
+}
+
+
+app.listen(port, function() {
+  console.log("Server has started successfully.");
 });

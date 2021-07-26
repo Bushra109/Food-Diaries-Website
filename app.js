@@ -42,24 +42,24 @@ Post.find({}, function(err, posts){
     posts: posts
   });
   });
-});
+})
 
 
 app.get("/about", function(req, res) {
   res.render("about", {
     AboutContent: aboutContent
   });
-});
+})
 
 app.get("/contact", function(req, res) {
   res.render("contact", {
     ContactContent: contactContent
   });
-});
+})
 
 app.get("/compose", function(req, res) {
   res.render("compose");
-});
+})
 
 app.post("/compose", function(req, res) {
   const post = new Post ({
@@ -96,7 +96,7 @@ Post.findOne({_id: requestedPostId}, function(err, post){
    });
 
  });
-});
+})
 
 
 

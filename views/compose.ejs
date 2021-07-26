@@ -1,0 +1,16 @@
+<%- include("header") -%>
+
+<h1>Compose</h1>
+
+<form class="" action="/compose" method="post">
+  <label >Name of Item</label><br>
+  <textarea class="text-area form-control" type="text" rows="1" cols="120" name="postTitle"></textarea><br>
+  <label >Add the full recipe</label><br>
+  <textarea class="text-area form-control"  type="text" rows="8" cols="120" name="postBody"></textarea><br>
+  <button type="submit" class="btn btn-warning">Publish</button>
+
+</form>
+
+
+
+<%- include("footer") -%>
